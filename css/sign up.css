@@ -1,0 +1,323 @@
+
+
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1334;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .error-msg {
+    color: #FCA311;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-link {
+    color: #FCA311;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #FCA311;
+    font-weight: bold;
+  }
+  
+  /* Login form styles */
+  .login-form {
+    background-color: #2D4356;
+    color: #FCA311;
+    border: 2px solid #89AAC3;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .close-btn {
+    color: #FCA311;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .namelogo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-name {
+    color: #FCA311;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .welcome {
+    color: #FCA311;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  label {
+    color: #FCA311;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inp input[type="text"],
+  .inp input[type="password"],.inp input[type="email"],.inp input[type="tel"] {
+    border: 2px solid #FCA311;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: #FCA311;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .login-button {
+    background-color: #FCA311;
+    color: #2D4356;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .login-button:hover {
+    background-color: #2D4356;
+    color: #FCA311;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .inp input[type="text"],
+    .inp input[type="password"] {
+      width: 50%;
+    }
+  }
+  
+  /* Sign up form styles */
+  .signup-form {
+    background-color: #2D4356;
+    color: #fff;
+    border: 2px solid #89AAC3;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .signup-form label {
+    margin-top: 10px;
+  }
+  
+  .signup-form .inp input[type="text"],
+  .signup-form .inp input[type="password"],
+  .signup-form .inp input[type="email"],
+  .signup-form .inp input[type="tel"] {
+    width: 100%;
+  }
+  
+  .signup-form .signup-button {
+    background-color: #FCA311;
+    color: #2D4356;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .booking-message {
+    background-color: #FCA311;
+    color: #2D4356;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+
+/* .signup-form {
+    margin: auto;
+    /* transform: translate(-50%, -50%); *
+    padding: 2em;
+    border-radius: 39px;
+    scale: 0.7;
+    width: 30em;
+    background-color: #110905!important;
+    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+a{
+    text-decoration: none;
+}
+.signup-form.active {
+    /* transform: translate(-50%, -50%) scale(1); 
+    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+.signup-form .namelogo>svg {
+    height: 3.8rem;
+    width: 3rem;
+}
+
+.signup-form .namelogo {
+    display: flex;
+    justify-content: left;
+}
+.signup-form label {
+    margin: 1rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-align: left;
+    color:bisque
+}
+
+.signup-form .form-container input {
+    width: 100%;
+    padding: 3%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #B8D6BF;
+    display: block;
+    font-size: 18px;
+    font-family: 'poppins';
+    color: #422c13;
+}
+
+.signup-form input:focus {
+    background-color: #ceecce;
+}
+for validation  
+.signup-form input:valid {
+  border: 1px solid green;
+}
+
+.signup-form input:invalid {
+  border: 1px solid red;
+}
+
+.signup-form span {
+    text-align: end;
+    display: block;
+    font-family: 'poppins';
+    margin: 10px;
+    color: #110905;
+}
+
+.signup-form span a {
+    cursor: pointer;
+}
+.signup-form button {
+    font-family: 'poppins';
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #1c295c;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.signup-form button:hover {
+    background-color: #31200c;
+}
+
+.signup-form .inp {
+    padding-right: 35px;
+    margin: 7px 0 7px 0;
+}
+
+.signup-form span.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-form .close-btn {
+    position: relative;
+    font-weight: 600;
+    font-family: 'poppins';
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    left: 90%;
+    top: 5px;
+    justify-content: center;
+    background-color: #5f0404;
+    cursor: pointer;
+}
+/* 
+
+ @media (max-height:913px) {
+    .signup-form {
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+        scale: 0.7;
+        top: -150%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    .signup-form.active {
+        top: 20%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+    }
+}
+
+
+@media (max-height:913px) {
+    .signup-form {
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+        scale: 0.7;
+        top: -150%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    .signup-form.active {
+        top: 20%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+    }
+}  */ 

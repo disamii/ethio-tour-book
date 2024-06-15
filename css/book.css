@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+ 
+    }
+ 
+.heading span{
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 50px;
+    background-color: black;
+    color:white;
+    box-shadow: 3px 3px 3px black;
+    
+}
+.heading{ margin-top: 10%;
+margin-left: 35%;}
+.heading .space{ 
+  border: 0; 
+  background-color: transparent;
+}
+
+.book {
+ margin: 10% 25%;  
+ font-family: sans-serif;
+  }
+.book .row form{
+    border: 1px solid rgba(226, 224, 224, 0.67);
+    flex:1 1 40rem;
+    padding: 0 2rem;    
+    border-radius: .5rem; 
+  }  
+  .book .row form .inputBox{
+    padding:.5rem 0;
+
+  } .book .row form .inputBox input, input{
+    box-sizing: border-box;
+    width:100%;
+    padding:1rem;
+    border:.1rem solid rgba(50, 49, 49, 0.168);
+    font-size: 1.2rem;
+    color:#411D0D;
+    font-family: 'poppins';
+    text-transform: none;
+    margin: 0;
+  }
+  .row .inputBox label{
+    font-size: 16px;
+    font-family: 'poppins';
+}
+ .nav-bar-components .tab-container .tabs li {
+display: block;
+position: relative;top: -45px;left: -3px;
+padding: 1px;
+float: inline-end;
+}
+.nav-bar-components{
+  text-align:left;
+  padding:5%;
+  }
+  .nav-bar-components .comp-logo{
+    margin:0% 3%;
+}
+@media(max-width:700px){
+  .book{
+    width: 100%;
+    margin: 0%;
+  }
+  .heading span{
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 50px;
+    background-color: black;
+    color:white;
+    box-shadow: 3px 3px 3px black;
+    
+}
+.heading{ margin-top: 10%;
+  margin-bottom: 20px;
+  margin-left: 5%;}
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../js/gallery.js">
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+<body>
+   
+    <section class="gallery-img" id="blur">
+       <div class="gallery img1">
+        <div> 
+            <a href="#" onclick="myFunction()" style="color: white;text-decoration: none;"><h1>AXUM</h1></a>
+        </div>
+       </div>
+       <div class="gallery img2">
+        <div> 
+            <h1>40MINCH</h1>
+        </div>
+       </div>
+       <div class="gallery img3">
+        <div> 
+            <h1>DANAKIL</h1>
+        </div>
+       </div>
+       <div class="gallery img4">
+        <div> 
+            <a href="#" onclick="myFunction1()" style="color: white; text-decoration: none;"><h1>FASILEDES</h1></a>
+        </div>
+       </div>
+       <div class="gallery img5">
+        <div> 
+            <h1>LALIBELA</h1>
+        </div>
+       </div>
+       <div class="gallery img6">
+        <div> 
+            <h1>SEMIEN</h1>
+     
+        </div>
+       
+       </div>
+    </section>
+
+<div id="popup1">
+    <p style="color: white;"> Fasiledes Chronicle is a famous Ethiopian chronicle from the 13th century. <br>
+        It is a primary source for the history of the Kingdom of Ethiopia and is one of the most <br>
+        important historical works from the medieval period in the country. <br>
+        The chronicle is divided into two parts, with the first part covering the history of Ethiopia <br>
+        from the earliest times up to 1268,and the second part from 1268 to 1285.br <br>
+        The chronicle was written by the historian Fasilides, who was the son of the Emperor Yekunno Amlak. <br>
+         Fasilides was born around 1220 and was the last ruler of the Zagwe Dynasty.  <br>
+         He was a scholar and historian, and wrote the chronicle during his reign as emperor.  <br>
+         The chronicle is written in the Geez language, and is an important source of information <br>
+         about the history and culture of the medieval period in Ethiopia</p>
+             <a href="#" onclick="myFunction1()">close</a>
+ </div>
+
+
+    
+    <div id="popup">
+        <p style="color:rgb(246, 246, 246)"> The Axum Chronicle is a collection of stories and legends from the Axumite Empire, <br>
+             which ruled over the region from the 1st century BC to the 10th century AD. <br>
+              It includes tales of the early Axumite kings, their conquests, and their battles. <br>
+               It also includes stories of the Axumite gods, their rituals, and their religious beliefs. <br>
+                The Axum Chronicle also includes stories of the Axumite people, their culture, and their <br>
+                 way of life. It is an important source of information for historians, anthropologists,<br>
+                 and other scholars interested in the history of Ethiopia. The Axum Chronicle is an invaluable <br>
+                 tool for understanding the history and culture of the region, and it is a must-read for anyone <br>
+                 interested in the history of Ethiopia.</p>
+                 <a href="#" onclick="myFunction()">close</a>
+     </div>
+    <a href="#" onclick="myFunction1()">read more</a>
+    <script>
+    /*    let galleryImages = document.querySelectorAll(".gallery");
+let gerLatestOpenedImg;
+let windowWidth=window.innerWidth;
+
+if(galleryImages){
+    galleryImages.forEach(function(image,index)
+        {
+image.onclick=function(){
+    let getElementCss=window.getComputedStyle(image);
+    let getFullImgUrl=getElementCss.getPropertyValue("background-image");
+   
+   /* let getImgUrlPOS = getFullImgUrl.split("/Axum-2.-newjpg.jpg");
+    let setNewImgUrl= getImgUrlPOS[1].replace
+    alert(getImgUrlPOS)
+    gerLatestOpenedImg;
+}
+        } );
+} */
+  function myFunction(){
+    var blur= document.getElementById('blur')
+      blur.classList.toggle('active')  
+      var popup= document.getElementById('popup')
+      popup.classList.toggle('active')
+  }
+      function myFunction1(){
+    var blur= document.getElementById('blur')
+      blur.classList.toggle('active')  
+      var popup= document.getElementById('popup1')
+      popup.classList.toggle('active')
+
+}
+    </script>
+ 
+</body>
+</html>

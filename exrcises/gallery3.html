@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+ <body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li class="selected"><a href="">Home</a></li>
+                    <li><a href="">Top-destination</a></li>
+                    <li><a href="">travel packages</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        </header>
+    <div class="slider" id="blur">
+        <div class="slider-track">
+
+            <div class="slide">
+                <div> 
+                    <h1>AXUM   </h1>
+                </div>
+                <img src="../image/marc-szeglat-Rj21YHC1CIY-unsplash.jpg" alt="" onclick="myFunction()">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>HARAR</h1>
+                </div>
+                <img src="../image/kobo.jpeg" alt=""onclick="myFunction()">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>FASILEDES</h1>
+                </div>
+                <img src="../image/fasiledes-5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>OMO</h1>
+                </div>
+                <img src="../image/omo.webp" alt="">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>SEMIEN</h1>
+                </div>
+                <img src="../image/semien.png" alt="">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>TIS-ABAY</h1>
+                </div>
+                <img src="../image/tisabbay2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>TANA</h1>
+                </div>
+                <img src="../image/Tana.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div> 
+                    <h1>ERTALE  </h1>
+                </div>
+                <img src="../image/marc-szeglat-Rj21YHC1CIY-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <p style="color:rgb(246, 246, 246)"> The Axum Chronicle is a collection of stories and legends from the Axumite Empire, <br>
+             which ruled over the region from the 1st century BC to the 10th century AD. <br>
+              It includes tales of the early Axumite kings, their conquests, and their battles. <br>
+               It also includes stories of the Axumite gods, their rituals, and their religious beliefs. <br>
+                The Axum Chronicle also includes stories of the Axumite people, their culture, and their <br>
+                 way of life. It is an important source of information for historians, anthropologists,<br>
+                 and other scholars interested in the history of Ethiopia. The Axum Chronicle is an invaluable <br>
+                 tool for understanding the history and culture of the region, and it is a must-read for anyone <br>
+                 interested in the history of Ethiopia.</p>
+                 <a href="#" onclick="myFunction()">close</a>
+     </div>
+     <script>
+         function myFunction(){
+    var blur= document.getElementById('blur')
+      blur.classList.toggle('active')  
+      var popup= document.getElementById('popup')
+      popup.classList.toggle('active')
+  }
+     </script>
+ </body>
+ </html>

@@ -1,0 +1,79 @@
+M
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Validation Example</title>
+<style>
+.input-field {
+border: 2px solid gray;
+padding: 5px;
+font-size: 16px;
+}
+
+.warning-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: right;
+  background-color: aqua;
+}
+
+.error {
+  border-color: red;
+}
+
+.success {
+  border-color: green;
+}
+
+.empty {
+  color: gray;
+}
+
+.not-a-number {
+  color: orange;
+}
+
+.large-number {
+  color: red;
+}
+</style>
+<script>
+function validate() {
+let x = document.getElementsByName("number-field")[0].value;
+let y = document.getElementById("warning");
+let inputField = document.getElementById("number-field");
+inputField.classList.remove("error", "success");
+y.classList.remove("empty", "not-a-number", "large-number");
+if (x.trim() == "") {
+y.textContent="empty";
+y.classList.add("empty");
+inputField.classList.add("error");
+} else if (isNaN(x)) {
+y.textContent="not a number";
+y.classList.add("not-a-number");
+inputField.classList.add("error");
+} else if (x > 100 || x < 1) {
+y.textContent= "large number!";
+y.classList.add("large-number");
+inputField.classList.add("error");
+} else {
+y.textContent="validation successful";
+inputField.classList.add("success");
+}
+}
+
+function showMessage() {
+  let y = document.getElementById("warning");
+  y.textContent = "Please enter a number between 1 and 10";
+  y.classList.remove("empty", "not-a-number", "large-number");
+  y.classList.add("warning-message");
+}
+</script>
+</head>
+<body>
+<label for="number-field">Enter a number between 1 and 10:</label>
+<input type="text" name="number-field" id="number-field" class="input-field" oninput="showMessage(); setTimeout(validate, 1000);">
+<p id="warning"></p>
+</body>
+</html>

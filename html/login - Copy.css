@@ -1,0 +1,187 @@
+/* 
+
+
+.afew{
+    text-align: center;
+    color:bisque;
+   padding-top: 10px;
+   margin-top: 4%;
+   font-family: arial;
+   text-shadow: 5px 8px 5px black;
+} 
+
+
+
+
+ .form-container{
+    margin-left: 3%; 
+    
+} 
+
+ .form-container .inp{
+    padding-bottom: 8px;
+} 
+
+span a{
+    color: rgb(52, 111, 193);
+    
+ } 
+
+ .login-link{
+    padding-top: 10px;
+} 
+
+ .login-button{
+    background-color: blue;
+     color: white; 
+    width:16%
+ }   */
+
+
+ body{
+    padding: 0%;
+    margin: 0%;
+   color: bisque;
+}
+ .login-form{
+    background-color: #110905!important;
+}
+.login-button:hover{
+    box-shadow:2px 2px 2px rgb(178, 177, 177);
+}
+.login-form input:valid {
+    border: 1px solid green;
+  }
+  
+  .login-form input:invalid {
+    border: 1px solid red;
+  }
+  .login-form .form-container input {
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+  .login-form input:focus {
+    background-color: #ceecce;
+}
+.login-form input{
+    background-color: inherit;
+
+} */
+body{
+    padding: 0%;
+    margin: 0%;
+   color: bisque;
+}
+ .login-form{
+    background-color: #110905!important;
+}
+
+label {
+  color: antiquewhite;
+  display: block;
+  margin-bottom: 5px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+.login-form label {
+    margin: 1rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    text-align: left;
+    color:bisque
+}
+.login-form .form-container input {
+    width: 100%;
+    padding: 3%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #B8D6BF;
+    display: block;
+    font-size: 18px;
+    font-family: 'poppins';
+    color: #422c13;
+}
+
+.login-form input:focus {
+    background-color: #ceecce;
+}
+/* for validation  */
+.login-form input:valid {
+  border: 1px solid green;
+}
+
+.login-form input:invalid {
+  border: 1px solid red;
+}
+
+.login-form span {
+    text-align: end;
+    display: block;
+    font-family: 'poppins';
+    margin: 10px;
+    color: #110905;
+}
+
+.login-form span a {
+    color:#1c295c;
+    cursor: pointer;
+}
+.login-form button {
+    font-family: 'poppins';
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #1c295c;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.login-form button:hover {
+    background-color: #31200c;
+}
+
+.login-form .inp {
+    padding-right: 35px;
+    margin: 7px 0 7px 0;
+}
+
+.login-form span.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form .close-btn {
+    position: relative;
+    font-weight: 600;
+    font-family: 'poppins';
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    left: 90%;
+    top: 5px;
+    justify-content: center;
+    background-color: #5f0404;
+    cursor: pointer;
+}
+.form-container h1{
+    font-family: sans-serif;
+    font-size: 24px;
+} h3{
+  
+    margin: 7%;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    
+} 

@@ -1,0 +1,109 @@
+body
+{
+     background-color: #1334; 
+
+}
+.ca1>div
+{
+
+  background-image: url(../image/pexels-thomas-k-15049193.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    border:2px solid white;
+    color: white;
+    padding: 20%;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:xx-large;
+}
+  section{
+    /* margin: 3% auto; */
+    display: grid;
+    grid-template-columns: repeat( 3,1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 10px; /* Optional gap between grid items */
+  }
+  .ca21>img{
+    width: 100%;
+    box-sizing: border-box;
+    display: hidden;
+  }
+  .ca2 {
+    /* color: #fff; */
+    background-color:#14202E;   /* Optional background color for grid items */
+    padding: 20px; /* Optional padding for grid items */
+  }
+ .ca2 ul {
+    background-color: gray;
+    margin-left: 5px;
+    padding: 5px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly ;
+}
+.ca2 li {
+    border-left:2px solid aqua;
+    padding-left: 6px;
+    cursor: pointer;
+}
+.ca21{
+    position: relative;
+}
+.ca221{
+    position: absolute;
+    background-color: rgba(14, 13, 13, 0.5);
+    color:bisque;
+    padding: 10px;
+    display: none;
+    top: 0;
+  
+  }
+  .ca2:hover .ca221{
+    display:block;
+  }
+  .ca21:hover img {
+    opacity: 0.5;
+    }
+    .rating {
+    
+        position: relative;
+        height: 25px;
+        line-height: 25px;
+        font-size: 25px;
+      }
+      
+      .rating input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      
+      .rating label {
+        color: #ddd;
+        float: right;
+      }
+      
+      .rating label:before {
+        content: "\2605";
+        margin-right: 5px;
+      }
+      
+      .rating input:checked ~ label {
+        color: #ffca08;
+      }
+      
+      .rating:not(:checked) label:hover,
+      .rating:not(:checked) label:hover ~ label {
+        color: #ffca08;
+      }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}

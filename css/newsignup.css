@@ -1,0 +1,104 @@
+#signup-form {
+    background-color: #f7f2e7;
+    color: #31200c;
+    border: 2px solid #31200c;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .close-btn {
+    color: #31200c;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .welcome {
+    color: #31200c;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  label {
+    color: #31200c;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inp input[type="text"],
+  .inp input[type="password"],
+  .inp input[type="email"],
+  .inp input[type="tel"] {
+    border: 2px solid #31200c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .inp input[type="text"],
+  .inp input[type="password"],
+  .inp input[type="email"],
+  .inp input[type="tel"]::placeholder {
+    color: #31200c;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-link {
+    color: #31200c;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #31200c;
+    font-weight: bold;
+  }
+  
+  .signup-button {
+    background-color: #31200c;
+    color: #f7f2e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .signup-button:hover {
+    background-color: #f7f2e7;
+    color: #31200c;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .inp input[type="text"],
+    .inp input[type="password"],
+    .inp input[type="email"],
+    .inp input[type="tel"] {
+      width: 50%;
+    }
+  }
+  

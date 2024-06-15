@@ -1,0 +1,93 @@
+body
+{
+     background-color: #1334; 
+
+}
+
+
+.th{
+    margin: auto;
+     background-image:url(../image/gift-habeshaw-xF-p6pr_zOQ-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 20%;
+     color: white;
+     text-align: center;
+}
+.tp{
+ color:#fff;
+ padding: 3%;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: auto;
+}
+.tp2{
+position: relative;
+/* z-index: -1; */
+margin-top:25px;
+background-color:#14202E;
+box-shadow: 2px 2px 4px rgba(241, 238, 238, 0.5); 
+border-top:none;
+border:1px solid #a1a1a1;
+padding: 2%;
+color: white;
+}
+.tp21{
+display: inline;
+}
+.tp2>img{
+    float: left;
+    margin-right:2%;
+}
+.tp211{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.date{
+    float:right
+}
+ .ca221{
+    position: absolute;
+    background-color: rgba(14, 13, 13, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    top: 0; 
+  }
+  .tp2:hover .ca221{
+    display:block;
+  }
+  .ca21:hover img {
+    opacity: 0.5;
+    }
+.tp212{
+    
+    display: flex;
+    overflow: hidden;
+}
+.tp212>div{
+    padding-left: 8%;
+}
+.ca221{
+    position: absolute;
+    background-color: rgba(14, 13, 13, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    top: 0;
+  }
+  .tp2:hover .ca221{
+    display:block;
+  }
+  .tp2:hover img {
+    opacity: 0.5;
+    } 
+    .descrpition{
+   width: 100%;
+   box-sizing: border-box;
+   /* overflow: hidden; */
+
+
+    }
+    #adwa{
+      width:100%;
+      box-sizing: border-box;
+    }

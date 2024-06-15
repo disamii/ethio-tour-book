@@ -1,0 +1,98 @@
+.five{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #212121; 
+  padding: 20px;
+  gap: 50px;
+ 
+}
+.five .flex-one{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.five .flex-one .flex-one-img img{
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-top: -25px;
+}
+.five .flex-one .flex-one-text{
+  text-align: center;
+  padding: 10px;
+  color: #e33232;
+  margin-top: -30px;
+
+}
+.five .flex-two{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+}
+.five .flex-two h2{
+  color: #ffffff;
+}
+.five .flex-two ul{
+  list-style-type: none;
+  
+}
+.five .flex-two ul li a{
+color: #e33232;
+text-decoration: none;
+background: none;
+padding: 10px;
+}
+.five .flex-three{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: -15px;
+
+}
+.five .flex-three h2{
+  color: #ffffff;
+}
+.five .flex-three ul{
+  list-style-type: none;
+  
+}
+.five .flex-three ul li a{
+color: #e33232;
+text-decoration: none;
+background: none;
+}
+.five .flex-four{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+     
+}
+.five .flex-four p,a{
+  color: #e33232;
+  background: none;
+}
+.five .flex-four h2{
+  color: white;
+}
+.five .flex-two ul li a:hover{
+  color: white;
+  transition: all ease-in-out 300ms;
+}
+.five .flex-three ul li a:hover{
+  color: white;
+  transition: all ease-in-out 300ms;
+}
+.five .flex-four p a:hover{
+  color: white;
+  transition: all ease-in-out 300ms;
+}

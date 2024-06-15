@@ -1,0 +1,228 @@
+
+.ht1{
+background-image: url(../image/jorg-angeli-1tyuLfDOnG0-unsplash.jpg);
+background-repeat: no-repeat;
+padding:18%;
+background-size: cover;
+}
+.ht1>div{
+ border:2px solid white;
+ color: white;
+ padding: 2%;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:xx-large;
+}
+.ht2{
+    box-sizing: border-box;
+    display: flex;
+    padding: 10%;
+}
+.ht21>div{
+    position: relative;
+}
+.ht21{
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    padding-bottom: 0;
+    background-color: #14202E;
+    flex: 1;
+    margin: 2%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.ht21 img{
+max-width: 100%;  
+box-sizing: border-box;
+}
+.ht21>div>div
+{  
+    padding: 2%;
+   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: rgb(194, 183, 183);
+  padding: 6%;
+}
+.ht3
+{
+  /* background-color: inherit; */
+    margin: 0;
+   display: flex;
+   justify-content:35% 25% 35%;
+   /* border: 4px solid white; */
+}
+.header{
+    font-family:  'Arial Narrow Bold', 'sans-seri';
+    font-weight:bolder;
+    font-size:234%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.ht31{
+    flex: 1 1 0;
+
+}
+.header,.text{
+display: grid;
+place-items:center;
+}
+.ht311
+{
+ color:#A1A880;
+ font-size:larger;
+ line-height: 2;
+
+}
+
+.ht3 img{
+ padding: 6%;
+ max-width: 100%;
+ box-sizing: border-box;
+}
+.slider {
+  background: #14202E;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 200%; /* updated width */
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  display: none;
+} 
+input[type="radio"]:checked + .slides {
+  transform: translateX(-50%);
+}
+.controls {
+  /* transform: translateX(-25%);  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin:  0 5px;
+}
+input[type="radio"]:checked + .controls label {
+  background-color: #bb1f1f;
+  color: #fff;
+} 
+.controls label:hover{
+  background-color: #fff;
+}
+label:checked
+{
+  background-color: aqua;
+}
+
+.ht4{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-gap:10px;
+  column-gap: 30px;
+  box-sizing: border-box; 
+  margin-top: 5%;
+  padding: 10%;
+  background-color: #2d4356;
+}
+.ht4-header{
+padding: 5%;
+text-align: center;
+margin:auto;
+}
+.ht4-header>h3{
+color: black;
+font-size:xx-large;
+font-weight: bolder;
+}
+.ht4-header .text{
+  text-align: center;
+  color:rgb(112, 64, 2);
+}
+.ht41{
+  background-color: #bb1f1f;
+  position:relative; 
+  box-shadow: 19px 15px 17px rgba(0, 0, 0, 0.5);
+  margin: 2%; 
+  box-sizing: border-box; 
+  max-width: 100%; 
+}
+.ht41 img{
+max-width: 100%;  
+box-sizing: border-box;
+}
+.ht41>.text
+{  
+padding: 2%;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+text-align: center;
+color: rgb(194, 183, 183);
+padding: 6%;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  
+
+
+}
+.rating>span{
+  max-height: 100%;
+}
+.ca221{
+  position: absolute;
+  background-color: rgba(14, 13, 13, 0.5);
+  color: #fff;
+  padding: 10px;
+  display: none;
+  top: 0;
+ right: 0;
+}
+.ht41:hover .ca221{
+  display:block;
+}
+
+
+
+
+
+
+
+
+
+

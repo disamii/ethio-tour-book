@@ -1,0 +1,84 @@
+* ------------------------------------------------------------ *
+*
+* ON Semiconductor
+* MC33364 model developed by Christophe BASSO, Toulouse (FRANCE)
+* e-mail: christophe.basso@onsemi.com
+* OrCAD's PSpice compatible
+*
+* These models account for the various propagation delays and
+* timers, except the internal 100ms re-start delay which has
+* NOT purposely been included.
+*
+* Last modified: 8/26/99
+*
+* MC33364D1: fixed internal frequency clamp
+* MC33364D2: no internal frequency clamp
+* MC33364D: adjustable frequency clamp (Not available now)
+*
+* ------------------------------------------------------------ *
+* Mc33364 PSpice Application circuit
+.TRAN 500n 600u 0 100n UIC
+.option reltol=0.01 itl5=0
+.probe
+.lib Mc33364.lib
+.PARAM Lp=1.9mH
+.PARAM RATIOPOW=-0.055
+.PARAM RATIOAUX=-0.15
+.PARAM VIN=350
+X1 22 7 FB 15 0 8 3 10 MC33364D1
+R3 22 Aux 22k
+R1 10 1 1
+L1 1 5 {Lp} ; primary inductor
+Vin 10 0 DC={VIN} ; input voltage	
+D1 4 12 DN5822
+Cout 6 0 470uF IC=5.9 ; output capacitor
+V2 11 2
+Rsense 7 0 2.2
+C2 15 0 10nF
+R8 hys 3 220
+D3 Aux hys DN4934
+V3 18 8
+X7 14 21 FB 0 MOC8101
+Rload 12 0 3
+R9 14 12 270
+X2 2 18 7 MTP2N60E
+X4 10 5 4 0 0 Aux XFMR2 PARAMS: RATIO1={RATIOPOW} RATIO2={RATIOAUX}
+Rser 6 12 100m
+CVcc 3 0 22uF IC=14.95
+Lleak 5 11 10uH
+R6 10 17 100k
+C6 10 17 1nF
+D2 11 17 MUR160
+.MODEL DN4934 D BV=1.33E+02 CJO=2.39E-11 IBV=1.00E-06
++ IS=2.06E-08 M=.41 N=2.00 RS=2.26E-02 TT=2.16E-07 VJ=.75
+D4 0 21 DN752
+.MODEL DN752 D BV=5.4766 CJO=376.59P IBV=10MA IS=1E-11
++ M=.33 N=1.27 RS=6.1685 TT=50N VJ=.75
+.MODEL MUR160 D BV=800 CJO=15.7P IBV=5U IS=1.08U M=.310
++ N=2.59 RS=55.5M TT=108N VJ=.75
+.MODEL DN5822 D BV=4.00E+01 CJO=4.39E-10 EG=.69 IBV=100E-06
++ IS=218U M=.699 N=1.45 RS=2.71E-02 TT=2.16E-11 VJ=4.462
++ XTI=2
+.SUBCKT MTP2N60E 10 20 40
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  1.8
+RS  30  3  96M
+RG  20  2  75
+CGS  2  3  230P
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  256P
+R1  13  0  1
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.5N
+.MODEL DMOS NMOS (LEVEL=3 THETA=45M VMAX=504K ETA=.75M VTO=3.1 KP=.748)
+.MODEL DCGD D (CJO=256P VJ=.6 M=.68)
+.MODEL DSUB D (IS=8.3N N=1.5 RS=.175 BV=600 CJO=236P VJ=.8 M=.42 TT=500N)
+.MODEL DLIM D (IS=100U)
+.ENDS 
+.END

@@ -1,0 +1,343 @@
+body{
+    padding: 0%;
+    margin: 0%;
+   
+}
+.all{
+    background-image: url(../image/omo.webp)
+
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+
+h1{
+font-family: sans-serif;
+font-size: 24px;
+font-weight: lighter;
+
+color: rgb(118, 101, 101);
+
+padding: 20px;}
+.pre{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+   padding: 20px;
+
+}
+.form-box{  
+    width:100%;
+}
+.form-box p{
+    font-size: 16px;
+}
+.form-box form input{
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border: rgb(171, 167, 167) 1px solid;
+    border-radius: 5px;
+}
+
+.form-box form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #1c1816;
+}
+.form-box form textarea{
+    border: rgb(142, 138, 138) 1px solid;
+
+}
+.form-box form .inputbox{
+    padding: 5px;
+  
+}
+fieldset{
+   
+    font-family: sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+  
+    
+}
+.form-box fieldset{
+    display: inline-block;
+}
+.contact-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+
+}
+ .contact-flex .flex-seven{
+    padding-left: 330px;
+ }
+ .contact-flex .flex-six{
+    padding-left: 150px;
+ }
+ .contact-flex .flex-seven h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(231, 50, 50);
+    padding-bottom: 20px;
+
+ }
+ .contact-flex .flex-seven p{
+ 
+    font-size: 16px;
+
+ }
+ .contact-flex .flex-six h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(247, 37, 37);
+    padding-bottom: 20px;
+
+ }
+ .contact-flex .flex-six p{
+  
+    font-size: 16px;
+
+ }
+ .contact-flex .flex-six ul{
+    list-style-type: none;
+ }
+ .two-forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 30px;
+ }
+ .map img{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+ }
+ @media(max-width:1000px){
+    .contact-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .flex-six{
+       
+    }
+    .two-forms{
+        flex-wrap: wrap;
+    }
+    .contact-flex .flex-seven{
+        padding-left: 0;
+     }
+     .map img{
+        height: 100px;
+     }
+     .contact-flex .flex-six{
+        padding-left: 0;
+     }
+ }
+ 
+.header {
+    margin-top: 4em;
+}
+
+.header h1, h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #411D0D;
+}
+
+.header h2 {
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.contact-container {
+    /* background-color: brown; */
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 3rem;
+    height: 40em;
+    gap: 1em;
+}
+
+.contact-container .contact-info {
+    background-color: #1c1816;
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 2em;
+    color: white;
+}
+
+.contact-info h3 {
+    margin-top: 1em;
+    font-size: 1.6em;
+    padding-bottom: 2.5em;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.email-address {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.rows {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 18em;
+}
+
+.form-wrapper {
+    width: 60%;
+}
+
+.form-wrapper form {
+    display: grid;
+    /* background-color: brown; */
+    border-radius: 10px;
+    /* width: auto;  */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "fname lname"
+        "email phoneno"
+        "subject subject"
+        "question question"
+        "message message";
+    grid-gap: 1.3rem;
+}
+
+.form-wrapper .fname {
+    /* background-color: blue; */
+    grid-area: fname;
+}
+
+
+.form-wrapper .lname {
+    /* background-color: blueviolet; */
+    grid-area: lname;
+}
+
+.form-wrapper .email {
+    /* background-color: yellowgreen; */
+    grid-area: email;
+}
+
+.form-wrapper .phoneno {
+    /* background-color: royalblue; */
+    grid-area: phoneno;
+}
+
+.form-wrapper .subject {
+    /* background-color: grey; */
+    grid-area: subject;
+}
+
+.form-wrapper .subject-type {
+    margin-top: 1em;
+}
+
+.form-wrapper .question {
+    /* background-color: grey; */
+    grid-area: question;
+}
+
+.form-wrapper .message {
+    /* background-color: grey; */
+    grid-area: message;
+}
+
+input[type='sumbit'] {
+    grid-area: input;
+}
+
+.btn {
+    display: inline-block;
+    /* margin-top: 1rem; */
+    background-color: white;
+    color: #271f1c;
+    padding: .8rem 3rem;
+    border: .2rem solid;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.15s, color 0.15s, border 0.15s;
+}
+
+.btn:hover {
+    background: #423a37;
+    color: white;
+    border: .2rem solid #201c1b;
+}
+
+form {
+    margin: 1.5em;
+}
+
+form input:focus {
+    outline: none;
+    background: none;
+}
+
+#block {
+    display: block;
+    margin-top: 1.3rem;
+    border: 2px solid #21201f;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 90%;
+    padding: 0.6em;
+    font-family: 'poppins';
+}
+
+.question select, .message textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid #282423;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 90%;
+    padding: 0.6em;
+    font-family: 'poppins';
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {}

@@ -1,0 +1,137 @@
+nav {
+    clear: left;
+    height: 50px;
+  border-radius: 8px;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.981),white,white);
+   
+    position: sticky;
+    top:0%;
+    margin-top: -20px;
+    border: 0.3px solid rgba(181, 176, 176, 0.447);
+    
+}
+* {
+    box-sizing: border-box; 
+    padding: 0%;
+    margin: 0;    
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+nav ul .menu li {
+    float: right;
+    padding: 10px 15px;
+}
+ul .menu li {
+    list-style-type: none;
+}
+.main .menu .no {
+    position: relative;
+}
+.main .menu .no ul {
+    display: none;
+    z-index: 100;
+}
+.main .menu .no:hover ul {
+    display: flex;
+flex-direction: column;}
+nav ul .menu li ul li {
+    background: #5b5a5a;
+    color: white;
+    padding: 5px;
+    border: 0.3px rgb(118, 117, 117) solid;
+    width: 100px;
+    border-collapse: collapse;
+    border-radius: 200px;
+    text-align: center;   
+}
+nav ul .menu li ul li:hover{
+    background-color: #f7f3f3;
+    color: #212121;
+}
+nav ul .menu li a {
+    padding: 4px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    background: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    vertical-align: middle;   
+}
+nav ul .menu li .selected{
+    color: #f60f0f;
+}
+
+nav ul .menu li a:hover
+  {
+    color: rgb(17, 17, 18);
+    background-color:rgb(229, 221, 221); 
+    border-radius: 5px;
+}
+header {
+    top: 0;
+    left: 0%;
+    right: 0;
+    z-index: 999;
+}
+.full{
+    display: flex;
+    flex-direction: column;
+}
+.over .inner h2{
+font-family: sans-serif;
+font-size: 30px;
+color:white;  
+}
+.c1 .over .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 40px;
+    
+}
+.c1 .over .inner p{ 
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: -20px;
+}
+.c1 {
+    color: black;
+    align-items: center;   
+    background-image: url(../image/fassil6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    text-align: center;
+    overflow: hidden;  
+}
+.over{
+    background: linear-gradient(to right ,#1d1d1def,#171818ce,#111317d3,#16191dee);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    height:220px ;    
+}
+.c2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -50px;
+}
+.c1 img {
+    float: left;
+    margin-left: -50px;
+    width: 600px;
+    height: 220px;
+    margin-top: -20px;
+}

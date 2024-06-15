@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#0f2027,#203a43,#2c3564);
+}
+
+.ca1>div
+{
+
+  background-image: url(/image/lalibela.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    border:2px solid white;
+    color: white;
+    padding: 20%;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:xx-large;
+}
+.ca1 {
+    background-image: url(/image/lalibella.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18.5%;
+    position: relative;
+    animation: change-image 5s infinite;
+}
+@keyframes change-image {
+    0% {
+      background-image: url('/image/Axum-2.-newjpg.jpg')
+    }
+    50% {
+      background-image: url('/image/fasiledes-5.jpg');
+    }
+    100% {
+        background-image: url('/image/lalibela-2.jpg');
+    }
+
+  }
+  
+.container {
+    position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color:#89AAC3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 0;
+    transform: scale(0.78); 
+}
+.ca221 {
+    position: absolute;
+    background-color: rgba(14, 13, 13, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+.container:hover .ca221 {
+    display: block;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.container:hover::before {
+    opacity: 1;
+}
+.container:hover::after {
+    opacity: 0.5;
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.8);
+}
+.container img:hover {
+    transform: scale(1.1);
+}
+.container P {
+
+    margin-top: 20px;
+  font-size: x-large;
+    text-align:left;
+    transition: color 0.3s ease-in-out;
+}
+.container P:hover {
+    color: #333;
+}
+@media (min-width: 768px) {
+    .container {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; */
+    }
+}
